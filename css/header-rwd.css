@@ -19,4 +19,33 @@
         width: 16rem;
         height: 4rem;
     }
+    .menu-screen {
+        width: 40vw;
+    }
+}
+@media screen and (max-width: 800px) {
+    #header .logo a {
+        width: 10rem;
+        height: 2rem;
+    }
+    #header .logo a:nth-child(1) {
+        width: 2rem;
+        height: 2rem;
+    }
+    #header .util-menu a {
+        /* display: none; */
+        display: block;
+        width: 2rem;
+        height: 2rem;
+    }
+    #header .util-menu {
+        gap: 1rem;
+    }
+    input[id="hamburger"] + label {
+        width: 2rem;
+        height: 2rem;
+    }
+    input[id="hamburger"] + label span {
+        height: 2px;
+    }
 }
