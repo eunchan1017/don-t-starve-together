@@ -10,6 +10,7 @@ $(function () {
     const wilson = $("#hero .wilson");
     const willow = $("#hero .willow");
     const heroLogo = $("#hero .hero-logo");
+    const boss = $(".Gomsol");
 
     const menuBar = $(".util-menu .menu");
     const menuScreen = $(".menu-screen");
@@ -72,6 +73,10 @@ $(function () {
         });
         heroLogo.css({
             transform: `translate(-50%,${my * 0.08 - 50}%)`,
+        });
+        boss.css({
+            transform: `translate(${mx * 0.2 - 50}%,${my * 1}px)`,
+            width: `${-my * 3 + 600}px`,
         });
     }
 

@@ -22,8 +22,14 @@
     .menu-screen {
         width: 40vw;
     }
+    .menu-logo {
+        width: 16rem;
+    }
+    .search-txt {
+        width: 17rem;
+    }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
     #header .logo a {
         width: 10rem;
         height: 2rem;
@@ -47,5 +53,8 @@
     }
     input[id="hamburger"] + label span {
         height: 2px;
+    }
+    .menu-gnb li a {
+        font-size: 2rem;
     }
 }

@@ -6,7 +6,7 @@
 #hero {
     position: relative;
     width: 100%;
-    aspect-ratio: 16/9;
+    height: 100vh;
     overflow: hidden;
 }
 .hero-visual {
@@ -37,18 +37,19 @@
     aspect-ratio: 753/700;
     background: url(../img/Willow.png) no-repeat 50% 50% / cover;
 }
-/* #hero .Gomsol {
+#hero .Gomsol {
     position: absolute;
-    top: 55rem;
+    top: 30%;
     left: 50%;
     transform: translateX(-50%);
-    width: 100rem;
-    aspect-ratio: 1/1;
+    width: 40rem;
+    aspect-ratio: 336/374;
     background: url(../img/season1-boss.webp) no-repeat 50% 50% / cover;
-} */
+    opacity: 0.6;
+}
 .hero-logo {
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 50%;
     width: 23.4375vw;
     transform: translate(-50%, -50%);
@@ -269,10 +270,11 @@
 }
 #character {
     width: 100%;
-    aspect-ratio: 16/9;
+    height: 100vh;
     background: url(../img/character-bg.png) no-repeat 50% 40% / cover;
     padding: 24rem 0 0;
     position: relative;
+    box-sizing: border-box;
 }
 #character .sec-title {
 }
