@@ -42,7 +42,7 @@
     top: 30%;
     left: 50%;
     transform: translateX(-50%);
-    width: 40rem;
+    width: 80rem;
     aspect-ratio: 336/374;
     background: url(../img/season1-boss.webp) no-repeat 50% 50% / cover;
     opacity: 0.6;
@@ -51,7 +51,7 @@
     position: absolute;
     top: 30%;
     left: 50%;
-    width: 23.4375vw;
+    width: 20vw;
     transform: translate(-50%, -50%);
     aspect-ratio: 450/415;
 }
@@ -169,7 +169,7 @@
 }
 #feature {
     width: 100%;
-    aspect-ratio: 16/9;
+    height: 100vh;
     position: relative;
     display: flex;
     align-items: center;
@@ -271,10 +271,14 @@
 #character {
     width: 100%;
     height: 100vh;
-    background: url(../img/character-bg.png) no-repeat 50% 40% / cover;
-    padding: 24rem 0 0;
+    background: url(../img/character-bg.png) no-repeat 50% 0% / cover;
+    /* padding: 24rem 0 0; */
     position: relative;
     box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 #character .sec-title {
 }
@@ -284,12 +288,14 @@
     justify-content: space-between;
     align-items: center;
     width: 69rem;
-    height: 46.4rem;
+
+    aspect-ratio: 690/464;
     margin: 2rem auto 0;
+    padding-top: 2rem;
 }
 .character-img {
     width: 32.5rem;
-    height: 46.4rem;
+    aspect-ratio: 325/464;
 }
 .character-info-wrap {
     width: 32.5rem;
@@ -360,7 +366,7 @@
     left: 18%;
     transform: rotate(180deg);
     width: 8rem;
-    height: 8rem;
+    aspect-ratio: 1/1;
     background: url(../img/arrow.png) no-repeat 0 0 / cover;
     z-index: 10;
     cursor: pointer;
@@ -371,7 +377,7 @@
     right: 18%;
     transform: rotate(0deg);
     width: 8rem;
-    height: 8rem;
+    aspect-ratio: 1/1;
     background: url(../img/arrow.png) no-repeat 0 0 / cover;
     z-index: 10;
     cursor: pointer;
@@ -486,6 +492,10 @@
     background: url(../img/ico-start.png) no-repeat 0 0 / cover;
     width: 6rem;
     height: 6rem;
+    transition: 0.4s;
+}
+.trailer-wrap li:hover:after {
+    display: none;
 }
 .trailer-wrap li::before {
     content: "";
@@ -561,6 +571,11 @@
     height: 100vh;
     background: url(../img/moon-back.jpg) no-repeat 0 0 / cover;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
 }
 #reviews .btn-next {
     position: absolute;
@@ -568,7 +583,7 @@
     top: 50%;
     transform: translateY(-50%) rotate(0deg);
     width: 8rem;
-    height: 8rem;
+    aspect-ratio: 1/1;
     z-index: 10;
     background: url(../img/arrow.png) no-repeat 0 0 / cover;
 }
@@ -578,7 +593,7 @@
     top: 50%;
     transform: translateY(-50%) rotate(180deg);
     width: 8rem;
-    height: 8rem;
+    aspect-ratio: 1/1;
     z-index: 10;
     background: url(../img/arrow.png) no-repeat 0 0 / cover;
 }
@@ -606,10 +621,10 @@
     background: rgba(0, 0, 0, 0.6);
 }
 #reviews .sec-title {
-    padding-top: 18rem;
+    /* padding-top: 18rem; */
 }
 #reviews .reviews-wrap {
-    margin-top: 14.6rem;
+    /* margin-top: 14.6rem; */
 }
 #reviews .reviews-card {
     width: 100%;
@@ -637,7 +652,7 @@
     background: #000;
     color: #fff;
     z-index: 1;
-    margin: 12.2rem auto;
+    /* margin: 12.2rem auto; */
     gap: 1rem;
     font-weight: 700;
     font-size: 2.4rem;

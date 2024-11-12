@@ -76,7 +76,6 @@ $(function () {
         });
         boss.css({
             transform: `translate(${mx * 0.2 - 50}%,${my * 1}px)`,
-            width: `${-my * 3 + 600}px`,
         });
     }
 

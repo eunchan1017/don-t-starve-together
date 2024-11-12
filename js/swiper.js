@@ -65,9 +65,12 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     const reviewsSlider = new Swiper(".reviews-slider", {
         loop: true,
-        slidesPerView: 3,
+        slidesPerView: 1,
         spaceBetween: 40,
         centeredSlides: true,
+        breakpoints: {
+            1280: { slidesPerView: 3 },
+        },
         pagination: {
             el: "#reviews .pagination",
             clickable: true,

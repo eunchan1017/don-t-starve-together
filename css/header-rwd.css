@@ -29,6 +29,12 @@
         width: 17rem;
     }
 }
+@media screen and (max-width: 1000px) {
+    .menu-screen {
+        width: 40rem;
+    }
+}
+
 @media screen and (max-width: 600px) {
     #header .logo a {
         width: 10rem;
@@ -56,5 +62,10 @@
     }
     .menu-gnb li a {
         font-size: 2rem;
+    }
+}
+@media screen and (max-width: 400px) {
+    .menu-screen {
+        width: 100vw;
     }
 }
