@@ -1,8 +1,8 @@
 @charset "utf-8";
 #sub {
     background: #111;
-    width: 100%;
-    min-height: 100vw;
+    /* width: 100%; */
+    /* min-height: 100vw; */
     padding-top: 1rem;
 }
 body {
@@ -50,7 +50,7 @@ body {
 }
 #character .btn-prev {
     position: absolute;
-    left: -2rem;
+    left: -5rem;
     top: 40%;
     transform: translateY(-50%);
     transform: rotate(225deg);
@@ -61,7 +61,7 @@ body {
 }
 #character .btn-next {
     position: absolute;
-    right: -2rem;
+    right: -5rem;
     top: 40%;
     transform: translateY(-50%);
     transform: rotate(45deg);
